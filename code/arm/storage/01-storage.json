@@ -1,18 +1,32 @@
 {
     "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
     "contentVersion": "1.0.0.0",
-    "parameters": {},
+    "parameters": {
+        "storagename": {
+            "type": "string",
+            "metadata": {
+                "description": "description"
+            }
+        },
+        "skuname": {
+            "type": "string",
+            "metadata": {
+                "description": "description"
+            }
+        }
+
+    },
     "functions": [],
     "variables": {},
     "resources": [
         {
-            "name": "dpkstorageaccount1",
+            "name": "[parameters('storagename')]",
             "type": "Microsoft.Storage/storageAccounts",
             "apiVersion": "2021-04-01",
             "location": "[resourceGroup().location]",
             "kind": "StorageV2",
             "sku": {
-                "name": "Standard_GRS",
+                "name": "[parameters('skuname')]",
                 "tier": "Standard"
             }
         }

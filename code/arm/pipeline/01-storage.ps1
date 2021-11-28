@@ -10,5 +10,8 @@ else
     # ResourceGroup exist
 }
 
-New-AzResourceGroupDeployment -Name "new-Storage" -ResourceGroupName $rg -TemplateFile ".\01-storage.json"
+New-AzResourceGroupDeployment `
+    -Name "new-Storage" `
+    -ResourceGroupName $rg `
+    -TemplateFile "..\storage\01-storage.json"
     

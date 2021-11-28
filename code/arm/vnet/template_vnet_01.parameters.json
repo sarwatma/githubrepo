@@ -3,16 +3,16 @@
     "contentVersion": "1.0.0.0",
     "parameters": {
         "location": {
-            "value": "centralindia"
+            "value": "koreacentral"
         },
         "extendedLocation": {
             "value": {}
         },
         "virtualNetworkName": {
-            "value": "vnet01"
+            "value": "myvnet02"
         },
         "resourceGroup": {
-            "value": "Dev"
+            "value": "arm-introduction-01"
         },
         "addressSpaces": {
             "value": [
