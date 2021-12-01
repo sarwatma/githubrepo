@@ -9,7 +9,7 @@
             "value": {}
         },
         "virtualNetworkName": {
-            "value": "myvnet02"
+            "value": "myvnet01"
         },
         "resourceGroup": {
             "value": "arm-introduction-01"
