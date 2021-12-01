@@ -11,5 +11,12 @@ New-AzResourceGroupDeployment `
     -TemplateParameterFile "..\vnet\template_vnet_01.parameters.json" `
     -SkipTemplateParameterPrompt
 
+New-AzResourceGroupDeployment `
+    -Name "New-vm" `
+    -ResourceGroupName $rg `
+    -TemplateFile "..\vm\myvm01.json" `
+    -TemplateParameterFile "..\vm\myvm01.parameters.json" `
+
+
 
 
